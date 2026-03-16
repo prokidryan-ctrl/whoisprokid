@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://whoisprokid.com/sitemap.xml
