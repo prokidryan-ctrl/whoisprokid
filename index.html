@@ -517,7 +517,7 @@ section {
 
 .bio-visual {
   position: relative;
-  height: 600px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -561,17 +561,17 @@ section {
 }
 
 .bio-card-icon img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--accent-1);
+  border: 3px solid var(--accent-1);
   box-shadow: 0 0 20px rgba(255, 60, 0, 0.3);
 }
 
 .bio-card-name {
   font-family: 'Outfit', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   letter-spacing: -1px;
   margin-bottom: 10px;
@@ -582,15 +582,15 @@ section {
 }
 
 .bio-card-title {
-  font-size: 0.8rem;
-  letter-spacing: 4px;
+  font-size: 0.95rem;
+  letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .bio-card-detail {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-secondary);
   margin-bottom: 8px;
   display: flex;
@@ -1275,7 +1275,7 @@ section {
     gap: 40px;
   }
   .bio-visual {
-    height: 400px;
+    min-height: auto;
   }
   .notable-grid {
     grid-template-columns: 1fr;
@@ -1327,7 +1327,7 @@ section {
     grid-template-columns: 1fr;
   }
   .bio-visual {
-    height: 350px;
+    min-height: auto;
   }
   .notable-section::before {
     width: 400px;
@@ -1385,10 +1385,11 @@ section {
     right: 0;
   }
   .bio-visual {
-    height: 320px;
+    min-height: auto;
   }
   .bio-3d-card {
     padding: 30px 20px;
+    aspect-ratio: auto;
   }
   .credit-card {
     padding: 25px;
