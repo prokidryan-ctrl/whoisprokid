@@ -715,6 +715,35 @@ section {
 }
 
 /* ============================================
+   MUSIC / SPOTIFY SECTION
+   ============================================ */
+.music-section {
+  background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.music-embed-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  transition: all 0.4s ease;
+}
+
+.music-embed-wrapper:hover {
+  border-color: rgba(30, 215, 96, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.music-embed-wrapper iframe {
+  display: block;
+  border-radius: 12px;
+}
+
+/* ============================================
    EXPERIENCE TIMELINE
    ============================================ */
 .experience-section {
@@ -1307,6 +1336,10 @@ section {
   .horizontal-text-item {
     padding: 0 20px;
   }
+  .music-embed-wrapper {
+    padding: 16px;
+    border-radius: 14px;
+  }
   .cursor-dot, .cursor-ring {
     display: none;
   }
@@ -1582,6 +1615,7 @@ section {
   <ul class="nav-links">
     <li><a href="#bio">Bio</a></li>
     <li><a href="#credits">Credits</a></li>
+    <li><a href="#listen">Listen</a></li>
     <li><a href="#experience">Legacy</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#gear">Gear</a></li>
@@ -1601,6 +1635,7 @@ section {
   <ul class="mobile-nav-links">
     <li><a href="#bio">Bio</a></li>
     <li><a href="#credits">Credits</a></li>
+    <li><a href="#listen">Listen</a></li>
     <li><a href="#experience">Legacy</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#gear">Gear</a></li>
@@ -1789,6 +1824,31 @@ section {
 </section>
 
 <!-- ============================================
+     MUSIC / SPOTIFY SECTION
+     ============================================ -->
+<section class="music-section section-padding" id="listen">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">04 &mdash; Listen</span>
+      <h2 class="section-title">The<br><span class="thin">Sound</span></h2>
+    </div>
+    <div class="music-embed-wrapper reveal">
+      <iframe
+        style="border-radius: 12px;"
+        src="https://open.spotify.com/embed/playlist/49Fv8MaJGbpyYtRFzL2B89?utm_source=generator&theme=0"
+        width="100%"
+        height="352"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        title="ProKid Spotify Playlist">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
      SCROLLING TEXT DIVIDER
      ============================================ -->
 <div class="horizontal-text">
@@ -1805,7 +1865,7 @@ section {
 <section class="experience-section section-padding" id="experience">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">04 &mdash; Legacy</span>
+      <span class="section-label">05 &mdash; Legacy</span>
       <h2 class="section-title">The Journey<br><span class="thin">That Built the Sound</span></h2>
     </div>
     <div class="timeline">
@@ -1851,7 +1911,7 @@ section {
 <section class="notable-section section-padding" id="notable">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">05 &mdash; Milestones</span>
+      <span class="section-label">06 &mdash; Milestones</span>
       <h2 class="section-title">Defining<br><span class="thin">Moments</span></h2>
     </div>
     <div class="notable-grid">
@@ -1885,7 +1945,7 @@ section {
 <section class="skills-section section-padding" id="skills">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">06 &mdash; Expertise</span>
+      <span class="section-label">07 &mdash; Expertise</span>
       <h2 class="section-title">Core<br><span class="thin">Capabilities</span></h2>
     </div>
     <div class="skills-grid">
@@ -1919,7 +1979,7 @@ section {
 <section class="gear-section section-padding" id="gear">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">07 &mdash; The Arsenal</span>
+      <span class="section-label">08 &mdash; The Arsenal</span>
       <h2 class="section-title">Gear &<br><span class="thin">Technology</span></h2>
     </div>
     <div class="gear-grid">
@@ -1953,7 +2013,7 @@ section {
 <section class="community-section section-padding" id="community">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">08 &mdash; Community Impact</span>
+      <span class="section-label">09 &mdash; Community Impact</span>
       <h2 class="section-title">Building<br><span class="thin">Beyond the Studio</span></h2>
     </div>
     <div class="community-grid">
